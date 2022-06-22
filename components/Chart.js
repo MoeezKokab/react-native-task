@@ -50,17 +50,27 @@ const Chart = () => {
             <View style={{ flexDirection: "row", justifyContent: "space-around", marginTop: 10, }}>
                 <Button
                     onPress={() => console.log("preess")}
-                    title="Learn More"
+                    title="Earnings"
                     color="black"
                     style={{ borderWidth: 1 }}
 
                 />
-                <Button
-                    onPress={() => console.log("preess")}
-                    title="Learn More"
-                    color="black"
+                <View style={{ flexDirection: 'row' }}>
+                    <Button
+                        onPress={() => console.log("preess")}
+                        title="Donation"
+                        color="black"
 
-                />
+                    />
+                    <View style={{ marginTop: 19 }}>
+                       <View style={{marginLeft:-6}}>
+                       <Svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <Path d="M1.31379 1.17967C0.766236 1.77476 0.766756 2.7323 1.31379 3.32803L3.7371 5.9677C4.54582 5.08885 5.35451 4.20987 6.16315 3.3311C6.71071 2.73601 6.71071 1.77788 6.16315 1.18274C5.61559 0.58765 4.73392 0.587591 4.18626 1.18274L3.7398 1.66795L3.29051 1.17971C2.74291 0.584627 1.86128 0.584627 1.31362 1.17971L1.31379 1.17967Z" fill="#E93535" />
+                        </Svg>
+                       </View>
+                    </View>
+                </View>
+
             </View>
 
             <BarChartt />
